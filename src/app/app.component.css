@@ -1,0 +1,14 @@
+#theia-statusBar {
+    display: none;
+}
+
+.theia-container {
+    position: relative;
+    flex: 1;
+}
+
+.mast-head {
+    background-color: #1776BF;
+    padding: 10px;
+    color: #fff;
+}

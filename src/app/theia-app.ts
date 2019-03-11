@@ -30,7 +30,9 @@ export const runApplication = (appElement: HTMLElement) => {
 
   const container = new Container();
   container.load(browserMenuModule);  
+  //workaround to fix the error
   container.bind(WindowService).to(DefaultWindowService).inSingletonScope();
+  
   container.load(frontendApplicationModule);
   container.load(messagingFrontendModule);
   container.load(loggerFrontendModule);
